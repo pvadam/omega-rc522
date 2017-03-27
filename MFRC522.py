@@ -113,10 +113,10 @@ class MFRC522:
 
     ### modify any SPI settings as required
     self.spi  = onionSpi.OnionSpi(1, 32766)
-    # self.spi.sck = 1
+    self.spi.sck = 7
     self.spi.mosi = 8
     self.spi.miso = 9
-    # self.spi.cs = 6
+    self.spi.cs = 6
     # self.spi.csHigh  = 1
 
     ### register the device
